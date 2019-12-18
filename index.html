@@ -5,25 +5,56 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>bictia</title>
+    <title>Bictia - Tienda</title>
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-<section class="section-center">
-    <form method="POST" class="form-login">
-        <h2>Ingresar</h2>
-        <section class="group">
-            <label for="email">Correo electronico</label>
-            <input type="text" name="email" id="email" class="input">
-        </section>
-        <section class="group">
-            <label for="email">Contraseña</label>
-            <input type="password" name="password" id="password" class="input">
-        </section>
-        <section class="group">
-            <button class="btn btn-green">Ingresar</button>
-        </section>
-    </form>
-</section>
+<nav class="nav">
+    <a href="#" class="brand">T<span>!</span>enda</a>
+    <ul class="nav-menu">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Productos</a></li>
+        <li><a href="#">Productos</a></li>
+        <li><a href="login.html">Login</a></li>
+    </ul>
+</nav>
+<style>
+    .nav, .nav-menu{
+        display: flex;
+        align-items: center;
+    }
+
+    .nav{
+        padding: 50px 100px;
+    }
+
+    .brand{
+        font-size: 20px;
+        font-family: Montserrat;
+        font-weight: bold;
+        color: var(--primary);
+    }
+
+    .brand span{
+        color: var(--secondary);
+    }
+
+    .nav-menu{
+        margin-left: auto;
+    }
+
+    .nav-menu li{
+        margin-left: 20px;
+    }
+    
+    .nav-menu li a {
+        font-family: "Montserrat";
+    }
+
+    .nav-menu li a:not(:hover){
+        opacity: .7;
+    }
+</style>
+
 </body>
 </html>

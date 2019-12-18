@@ -20,7 +20,7 @@ Fuentes
 
 :root{
     --primary: #386eb1;
-    --secondary: #386eb1;
+    --secondary: #2cfbb8;
     --black: black;
     --green: #2bca6a;
 }
@@ -28,7 +28,7 @@ Fuentes
 /**
 RESET CSS
  */
-*{
+* {
     margin: 0;
     padding: 0;
     -webkit-box-sizing: border-box;
@@ -37,6 +37,10 @@ RESET CSS
     border: none;
     outline: none;
     transition: .4s;
+    color: #444;
+    word-break: break-word;
+    text-decoration: none;
+    list-style: none;
 }
 
 h1, h2 {
@@ -60,6 +64,9 @@ Helpers
     justify-content: center;
 }
 
+.mt-2{
+    margin-top: 20px;
+}
 /**
     Estilos del formulario
  */
@@ -89,6 +96,10 @@ Helpers
     border-bottom: 2px solid var(--primary);
 }
 
+.btn{
+    cursor: pointer;
+}
+
 .btn:hover{
     box-shadow: 0 5px 5px #0000002e;
 }
@@ -100,4 +111,9 @@ Helpers
 
 .btn-green:hover{
     background: var(--green);
+}
+
+.btn-secondary{
+    background: transparent;
+    font-weight: bold;
 }
