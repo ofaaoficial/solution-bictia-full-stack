@@ -36,7 +36,6 @@ RESET CSS
     box-sizing: border-box;
     border: none;
     outline: none;
-    transition: .4s;
     color: #444;
     word-break: break-word;
     text-decoration: none;
@@ -116,4 +115,121 @@ Helpers
 .btn-secondary{
     background: transparent;
     font-weight: bold;
+}
+
+
+/**
+Estilos del menu
+ */
+.nav, .nav-menu{
+    display: flex;
+    align-items: center;
+}
+
+.nav{
+    padding: 30px 100px;
+    box-shadow: 0 5px 10px #0000001a;
+}
+
+.brand{
+    font-size: 20px;
+    font-family: Montserrat;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.brand span{
+    color: var(--secondary);
+}
+
+.nav-menu{
+    margin-left: auto;
+}
+
+.nav-menu li{
+    margin-left: 20px;
+}
+
+.nav-menu li a {
+    font-family: "Montserrat";
+}
+
+.nav-menu li a:not(:hover){
+    opacity: .7;
+}
+
+/**
+ Estilos de categorias
+ */
+
+.categorias{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.categorias article{
+    position: relative;
+    background: black;
+    cursor: pointer;
+}
+
+.categorias article, .categorias article img{
+    width: 350px;
+    height: 400px;
+}
+
+.categorias article img{
+    opacity: .5;
+}
+
+.categorias article img:hover{
+    opacity: 1;
+}
+
+.categorias article h2{
+    position: absolute;
+    color: #fff;
+    left: 20px;
+    top: 20px;
+    text-shadow: 1px 2px 5px black;
+}
+
+img{
+    object-fit: cover;
+    width: 100%;
+}
+
+@media (max-width: 1260px) {
+    .categorias article, .categorias article img{
+        width: 300px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .categorias{
+        flex-wrap: wrap;
+    }
+
+    .categoria-mujer, .categoria-mujer img{
+        width: 100% !important;
+        height: 300px !important;
+        margin-bottom: 20px;
+    }
+
+    .categoria-hombre img, .categoria-ninos img{
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .categoria-hombre, .categoria-ninos{
+        width: 49% !important;
+        height: 300px !important;
+    }
 }
