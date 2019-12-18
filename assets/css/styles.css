@@ -233,3 +233,34 @@ img{
         height: 300px !important;
     }
 }
+
+/**
+    Estilos de dropdown
+ */
+.dropdown{
+    position: relative;
+}
+
+.dropdown-menu{
+    display: none;
+    width: 200px;
+    position: absolute;
+    left: 0;
+    z-index: 200;
+    padding: 20px;
+    background: #fff;
+    font-family: "Montserrat";
+}
+
+.dropdown-menu li{
+    margin-left: 0;
+    margin-top: 12px;
+}
+
+.dropdown-menu li a:not(:hover){
+    opacity: .5;
+}
+
+.dropdown:hover .dropdown-menu, .dropdown-menu:hover{
+    display: block;
+}
