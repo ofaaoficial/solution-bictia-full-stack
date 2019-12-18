@@ -18,7 +18,7 @@ Fuentes
     Variables de colores
  */
 
-:root{
+:root {
     --primary: #386eb1;
     --secondary: #2cfbb8;
     --black: black;
@@ -47,7 +47,7 @@ h1, h2 {
     color: var(--primary);
 }
 
-p, label, span, button{
+p, label, span, button {
     font-family: "Roboto";
 }
 
@@ -55,7 +55,7 @@ p, label, span, button{
 Helpers
  */
 
-.section-center{
+.section-center {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -63,13 +63,14 @@ Helpers
     justify-content: center;
 }
 
-.mt-2{
+.mt-2 {
     margin-top: 20px;
 }
+
 /**
     Estilos del formulario
  */
-.form-login{
+.form-login {
     border: 1px solid rgba(0, 0, 0, 0.04);
     max-width: 90%;
     box-shadow: 5px 5px 10px #00000024;
@@ -78,7 +79,7 @@ Helpers
     padding: 50px;
 }
 
-.group{
+.group {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -86,68 +87,76 @@ Helpers
     margin-bottom: 20px;
 }
 
-.input, .btn{
+.input, .btn {
     padding: 12px 16px;
 }
 
-.input{
+.input {
     border: 1px solid #d8d8d8;
     border-bottom: 2px solid var(--primary);
 }
 
-.btn{
+.btn {
     cursor: pointer;
 }
 
-.btn:hover{
+.btn:hover {
     box-shadow: 0 5px 5px #0000002e;
 }
 
-.btn-green{
+.btn-green {
     background: var(--green);
     color: #fff;
 }
 
-.btn-green:hover{
+.btn-green:hover {
     background: var(--green);
 }
 
-.btn-secondary{
+.btn-secondary {
     background: transparent;
     font-weight: bold;
     font-family: "Montserrat";
+    opacity: .5;
 }
+
+.btn-secondary:hover{
+    box-shadow: none;
+    opacity: 1;
+}
+
+
 
 
 /**
 Estilos del menu
  */
-.nav, .nav-menu{
+.nav, .nav-menu {
     display: flex;
     align-items: center;
 }
 
-.nav{
+.nav {
     padding: 30px 100px;
     box-shadow: 0 5px 10px #0000001a;
 }
 
-.brand{
+.brand {
     font-size: 20px;
     font-family: Montserrat;
     font-weight: bold;
     color: var(--primary);
 }
 
-.brand span{
+.brand span {
     color: var(--secondary);
 }
 
-.nav-menu{
+.nav-menu {
     margin-left: auto;
 }
 
-.nav-menu li{
+.nav-menu li {
     margin-left: 20px;
 }
 
@@ -155,7 +164,7 @@ Estilos del menu
     font-family: "Montserrat";
 }
 
-.nav-menu li a:not(:hover){
+.nav-menu li a:not(:hover) {
     opacity: .7;
 }
 
@@ -163,7 +172,7 @@ Estilos del menu
  Estilos de categorias
  */
 
-.categorias{
+.categorias {
     margin-top: 50px;
     margin-bottom: 50px;
     display: flex;
@@ -174,26 +183,26 @@ Estilos del menu
     justify-content: space-between;
 }
 
-.categorias article{
+.categorias article {
     position: relative;
     background: black;
     cursor: pointer;
 }
 
-.categorias article, .categorias article img{
+.categorias article, .categorias article img {
     width: 350px;
     height: 400px;
 }
 
-.categorias article img{
+.categorias article img {
     opacity: .5;
 }
 
-.categorias article img:hover{
+.categorias article img:hover {
     opacity: 1;
 }
 
-.categorias article h2{
+.categorias article h2 {
     position: absolute;
     color: #fff;
     left: 20px;
@@ -201,35 +210,35 @@ Estilos del menu
     text-shadow: 1px 2px 5px black;
 }
 
-img{
+img {
     object-fit: cover;
     width: 100%;
 }
 
 @media (max-width: 1260px) {
-    .categorias article, .categorias article img{
+    .categorias article, .categorias article img {
         width: 300px;
         height: 400px;
     }
 }
 
 @media (max-width: 1100px) {
-    .categorias{
+    .categorias {
         flex-wrap: wrap;
     }
 
-    .categoria-mujer, .categoria-mujer img{
+    .categoria-mujer, .categoria-mujer img {
         width: 100% !important;
         height: 300px !important;
         margin-bottom: 20px;
     }
 
-    .categoria-hombre img, .categoria-ninos img{
+    .categoria-hombre img, .categoria-ninos img {
         width: 100% !important;
         height: 100% !important;
     }
 
-    .categoria-hombre, .categoria-ninos{
+    .categoria-hombre, .categoria-ninos {
         width: 49% !important;
         height: 300px !important;
     }
@@ -238,11 +247,11 @@ img{
 /**
     Estilos de dropdown
  */
-.dropdown{
+.dropdown {
     position: relative;
 }
 
-.dropdown-menu{
+.dropdown-menu {
     display: none;
     width: 200px;
     position: absolute;
@@ -253,24 +262,41 @@ img{
     font-family: "Montserrat";
 }
 
-.dropdown-menu li{
+.dropdown-menu li {
     margin-left: 0;
     margin-top: 12px;
 }
 
-.dropdown-menu li a:not(:hover){
+.dropdown-menu li a:not(:hover) {
     opacity: .5;
 }
 
-.dropdown:hover .dropdown-menu, .dropdown-menu:hover{
+.dropdown:hover .dropdown-menu, .dropdown-menu:hover {
     display: block;
 }
 
 /**
     Estilos perfil
  */
-.profile{
+.profile {
     margin-top: 50px;
     padding-right: 100px;
     padding-left: 100px;
+}
+
+@media (max-width: 620px) {
+    .nav {
+        flex-direction: column;
+    }
+
+    .nav-menu {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .categoria-hombre , .categoria-mujer, .categoria-ninos{
+        width: 100% !important;
+        margin-top: 20px;
+    }
+
 }
