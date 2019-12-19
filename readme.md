@@ -1,5 +1,6 @@
 ## 🔥 Proyecto de blog
 Solución de prueba para el curso full stack Bictia.
+Esta Solucion se realizó en 1 hora y 30 minutos.
 
 ## 📐 Tecnologías utilizadas
 * HTML5
